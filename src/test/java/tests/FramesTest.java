@@ -46,7 +46,7 @@ public class FramesTest {
         System.out.println(secondSampleTextElement.getText());
 
     // nested frames - tema
-
+    // sa identificam sa modificam restul testeleor cu JS
 
     }
 
