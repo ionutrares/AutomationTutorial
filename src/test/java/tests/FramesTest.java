@@ -1,5 +1,6 @@
 package tests;
 
+import helpMethods.ElementMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -24,6 +25,10 @@ public class FramesTest {
         driver.manage().window().maximize();
         //wait implicit
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+//        ElementMethods elementMethods = new ElementMethods(driver);
+//        FrameMethods frameMethods = new FrameMethods(driver);
+
 
         WebElement alertsFrameWindowsMenu = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
         JavascriptExecutor js = (JavascriptExecutor) driver;
